@@ -8,7 +8,7 @@ RUN apt-get install -y libzip-dev:i386 libcurl4-openssl-dev:i386 libssl-dev:i386
 
 RUN apt-get install -y wget bzip2 git protobuf-compiler unzip
 
-RUN git clone https://github.com/MCMrARM/mcpelauncher-linux .; git submodule init; git submodule update
+RUN git clone https://github.com/Irioth/mcpelauncher .; git submodule init; git submodule update
 
 RUN ./setup_bin_libs.sh; ./setup_cef.sh; ./download_icon.sh
 

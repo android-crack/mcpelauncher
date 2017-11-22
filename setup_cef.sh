@@ -26,7 +26,7 @@ echo "Building"
 mkdir -p "build"
 cd build
 cmake -DCMAKE_CXX_FLAGS=-m32 -DCMAKE_C_FLAGS=-m32 ..
-make -j${CPU_CORE_COUNT}
+make
 cd ..
 
 # Install
